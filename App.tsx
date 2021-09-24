@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import CartProvider from './context/CartContext';
 
 import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
@@ -15,8 +16,9 @@ export default function App() {
   } else {
     return (
       <SafeAreaProvider>
+        <CartProvider>
         <Navigation colorScheme={colorScheme} />
-        <StatusBar />
+        </CartProvider>
       </SafeAreaProvider>
     );
   }

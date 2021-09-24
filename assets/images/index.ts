@@ -1,0 +1,6 @@
+export const thapcam = require('./thapcam.jpeg')
+export const quangdong = require('./quangdong.png')
+export const dauxanh = require('./dauxanh.jpeg')
+export const saurieng = require('./saurieng.jpeg')
+export const traxanh = require('./traxanh.jpeg')
+export const thachladua = require('./thachladua.jpeg')
